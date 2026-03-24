@@ -6,7 +6,7 @@ import Utils.LogsUtil;
 import com.microsoft.playwright.Page;
 
 /**
- * 
+ * BasePage serves as the foundational class for all page objects in the framework.
  * Eliminates the repeated page/locator/jsonFile field declarations
  * that were duplicated across every page object.
  *
