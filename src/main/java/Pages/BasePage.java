@@ -6,7 +6,7 @@ import Utils.LogsUtil;
 import com.microsoft.playwright.Page;
 
 /**
- * Industry-standard base class for all page objects.
+ * 
  * Eliminates the repeated page/locator/jsonFile field declarations
  * that were duplicated across every page object.
  *
