@@ -1,0 +1,51 @@
+name: Run Login Test with Allure
+
+on:
+  push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb libnss3 libatk-bridge2.0-0
+      
+      - name: Install Playwright
+        run: mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install chromium"
+      
+      - name: Install Allure
+        run: |
+          wget https://github.com/allure-framework/allure2/releases/download/2.29.1/allure-2.29.1.zip
+          unzip allure-2.29.1.zip -d /tmp/
+          echo "/tmp/allure-2.29.1/bin" >> $GITHUB_PATH
+      
+      - name: Run testValidLogin
+        run: xvfb-run mvn test -Dtest=LoginTest#testValidLogin -Dheadless=true
+      
+      - name: Generate Allure report
+        run: allure generate test-outputs/allure-results --clean -o test-outputs/allure-report
+      
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: test-outputs/allure-report/
+      
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: target/surefire-reports/
