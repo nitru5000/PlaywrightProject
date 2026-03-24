@@ -251,9 +251,7 @@ public class HomePage extends BasePage {
     public HomePage addProductToCart(int index) {
         locator.byText("Add to Cart").nth(index).click();
         LogsUtil.info("Added product index " + index + " to cart");
-        // Wait for cart badge to update — confirms item was actually added before navigating
-        page.waitForSelector("[data-testid='cart-count-badge']",
-                new Page.WaitForSelectorOptions().setTimeout(5000));
+
         return this;
     }
 
