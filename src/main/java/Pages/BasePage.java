@@ -19,7 +19,7 @@ public abstract class BasePage {
     protected final JsonUtil jsonFile;
 
     public BasePage(Page page, String jsonFileName) {
-        this.page     = page;
+        this.page     =  page;
         this.locator  = new LocatorHelper(page);
         this.jsonFile = new JsonUtil(jsonFileName);
     }
