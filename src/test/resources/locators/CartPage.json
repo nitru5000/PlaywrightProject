@@ -1,0 +1,60 @@
+{
+  "url": "https://dot-log-pi.vercel.app/labs/end-to-end/ecommerce/cart",
+
+  "pageElements": {
+    "cartPage":    "cart-page",
+    "cart":        "cart",
+    "cartTitle":   "cart-title",
+    "emptyCartMessage": "empty-cart-message",
+    "continueShoppingButton": {
+      "testId": "continue-shopping",
+      "text":   "Continue Shopping"
+    },
+    "checkoutButton": {
+      "testId": "checkout-button",
+      "text":   "Proceed to Checkout"
+    },
+    "startShoppingButton": {
+      "text": "Start Shopping"
+    }
+  },
+
+  "item": {
+    "selector":        "[data-testid^='cart-item-']",
+    "nameSelector":    "h3.font-medium.text-base",
+    "priceSelector":   ".text-muted-foreground.text-sm"
+  },
+
+  "increaseQuantity": {
+    "testId":    "[data-testid^='increase-quantity-']",
+    "ariaLabel": "Increase quantity"
+  },
+
+  "decreaseQuantity": {
+    "testId":    "[data-testid^='decrease-quantity-']",
+    "ariaLabel": "Decrease quantity"
+  },
+
+  "quantity": {
+    "testId": "[data-testid^='quantity-']"
+  },
+
+  "removeItem": {
+    "ariaLabel": "Remove item"
+  },
+
+  "cartBadge": {
+    "testId": "cart-count-badge"
+  },
+
+  "totalPrice": {
+    "testId": "cart-total"
+  },
+
+  "discount": {
+    "inputTestId": "discount-code-input",
+    "applyButton": {
+      "text": "Apply"
+    }
+  }
+}

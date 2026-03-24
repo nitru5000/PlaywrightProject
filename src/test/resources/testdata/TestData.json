@@ -1,0 +1,65 @@
+{
+  "users": {
+    "valid": {
+      "email":    "test@example.com",
+      "password": "Test123!"
+    },
+    "invalid": {
+      "email":    "invalid@example.com",
+      "password": "WrongPass123"
+    }
+  },
+
+  "shipping": {
+    "firstName": "John",
+    "lastName":  "Doe",
+    "address":   "123 Main Street",
+    "city":      "Sydney",
+    "state":     "NSW",
+    "zipCode":   "2000",
+    "phone":     "0412345678"
+  },
+
+  "payment": {
+    "cardNumber": "4111111111111111",
+    "holderName": "John Doe",
+    "expiryDate": "12/26",
+    "cvv":        "123"
+  },
+
+  "discountCodes": {
+    "save10":   "SAVE10",
+    "save20":   "SAVE20",
+    "freeShip": "FREESHIP"
+  },
+
+  "shippingCosts": {
+    "standard":  "$5.99",
+    "express":   "$12.99",
+    "overnight": "$24.99"
+  },
+
+  "products": {
+    "index0": {
+      "name":  "The Psychology of Money",
+      "price": "$19.99"
+    },
+    "index1": {
+      "name":  "Organic Green Tea",
+      "index": "1"
+    }
+  },
+
+  "emailFriend": {
+    "friendEmail": "friend@example.com",
+    "yourEmail":   "you@example.com",
+    "message":     "Check out this product!"
+  },
+
+  "orderSummary": {
+    "subtotal": "$19.99",
+    "shipping": "$5.99",
+    "tax":      "$2.00",
+    "total":    "$27.98"
+  }
+}

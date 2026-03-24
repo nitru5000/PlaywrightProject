@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="dotLog Ecommerce Test Suite" verbose="1">
+
+    <!-- Pass browser via parameter: mvn test -Dbrowser=chrome -->
+    <parameter name="browser" value="chromium"/>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Home Page Tests">
+        <classes>
+            <class name="tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Tests">
+        <classes>
+            <class name="tests.CartPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Checkout Tests">
+        <classes>
+            <class name="tests.CheckoutPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Wishlist Tests">
+        <classes>
+            <class name="tests.WishlistPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Product Page Tests">
+        <classes>
+            <class name="tests.ProductPageTest"/>
+        </classes>
+    </test>
+
+    <test name="End to End Tests">
+        <classes>
+            <class name="tests.E2E"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,19 @@
+{
+  "url": "https://dot-log-pi.vercel.app/labs/end-to-end/ecommerce/wishlist",
+
+  "pageElements": {
+    "emptyWishlistText":     "Your Wishlist is Empty",
+    "browseProductsText":    "Browse Products"
+  },
+
+  "item": {
+    "selector":     "[data-testid^='wishlist-item-']",
+    "addToCart":    "Add to Cart",
+    "deleteButton": "button:has(svg.lucide-trash-2)"
+  },
+
+  "header": {
+    "homeLink": "header-home-link",
+    "cartLink": "header-cart-link"
+  }
+}

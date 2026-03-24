@@ -1,0 +1,58 @@
+{
+  "url": "https://dot-log-pi.vercel.app/labs/end-to-end/ecommerce",
+
+  "header": {
+    "testId":           "ecommerce-header",
+    "logo":             "header-logo-link",
+    "searchInput":      "Search products...",
+    "currencySelector": "header-currency-select",
+    "homeLink":         "header-home-link",
+    "wishlistLink":     "header-wishlist-link",
+    "cartLink":         "header-cart-link",
+    "loginButton":      "header-login-button",
+    "logoutButton":     "header-logout-button"
+  },
+
+  "navigation": {
+    "testId":      "main-navigation",
+    "electronics": "nav-link-electronics",
+    "clothing":    "nav-link-clothing",
+    "sports":      "nav-link-sports-&-fitness",
+    "books":       "nav-link-books",
+    "food":        "nav-link-food-&-beverages",
+    "subcategories": {
+      "electronics-phones":   "category=electronics&brand=apple",
+      "electronics-laptops":  "category=electronics&brand=samsung",
+      "clothing-nike":        "category=clothing&brand=nike",
+      "sports-equipment":     "category=sports&brand=fitness-gear",
+      "books-harriman":       "category=books&brand=harriman",
+      "food-organic":         "category=food&brand=organic-foods"
+    }
+  },
+
+  "banner": {
+    "hero":      "hero-banner",
+    "prevSlide": "banner-prev",
+    "nextSlide": "banner-next",
+    "dots":      "banner-dot-"
+  },
+
+  "filters": {
+    "testId":       "product-filters",
+    "minPrice":     "min-price-input",
+    "maxPrice":     "max-price-input",
+    "category":     "category-select",
+    "brand":        "brand-select",
+    "resetFilters": "reset-filters"
+  },
+
+  "compare": {
+    "clearCompare": "clear-compare",
+    "clearAll":     "clear-all"
+  },
+
+  "selectors": {
+    "skipToMain":       "#main-content",
+    "skipToNavigation": "#main-navigation"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "url": "https://dot-log-pi.vercel.app/labs/end-to-end/ecommerce/checkout",
+
+  "checkoutSteps": {
+    "shipping": { "testId": "checkout-step-shipping" },
+    "payment":  { "testId": "checkout-step-payment"  }
+  },
+
+  "shippingInfo": {
+    "firstName": "firstName",
+    "lastName":  "lastName",
+    "address":   "address",
+    "city":      "city",
+    "state":     "state",
+    "zipCode":   "postalCode",
+    "phone":     "phone"
+  },
+
+  "shipping": {
+    "standard":  "Standard Shipping",
+    "express":   "Express Shipping",
+    "overnight": "Overnight Shipping"
+  },
+
+  "Card_inputs": {
+    "cardNumber": "card-number-input",
+    "holderName": "card-holder-input",
+    "expirydate": "expiry-date-input",
+    "cvv":        "cvv-input"
+  },
+
+  "orderSummary": {
+    "container": "order-summary",
+    "subtotal":  "summary-subtotal",
+    "shipping":  "summary-shipping",
+    "tax":       "summary-tax",
+    "total":     "summary-total",
+    "discount":  "summary-discount"
+  },
+
+  "buttons": {
+    "continueToPayment":   { "testId": "continue-to-payment"   },
+    "continueToShipping":  { "testId": "continue-to-shipping"  },
+    "placeOrder":          { "testId": "place-order"           },
+    "editShipping":        { "testId": "edit-shipping"         },
+    "editPayment":         { "testId": "edit-payment"          },
+    "continueToPaymentText": "Continue to Payment",
+    "payNowText":            "Pay Now",
+    "continueShoppingText":  "Continue Shopping",
+    "viewOrdersText":        "View Orders"
+  },
+
+  "discount": {
+    "inputPlaceholder": "Enter code",
+    "applyText":        "Apply",
+    "removeCoupon":     "remove-coupon"
+  },
+
+  "confirmation": {
+    "successText":       "Payment Successful!",
+    "orderNumberPrefix": "Order Number:",
+    "continueShoppingText": "Continue Shopping",
+    "viewOrdersText":    "View Orders"
+  },
+
+  "testData": {
+    "valid": {
+      "firstName": "John",
+      "lastName":  "Doe",
+      "address":   "123 Main Street",
+      "city":      "Sydney",
+      "state":     "NSW",
+      "zipCode":   "2000",
+      "phone":     "0412345678",
+      "cardNumber":   "4111111111111111",
+      "holderName":   "John Doe",
+      "expiryDate":   "12/26",
+      "cvv":          "123"
+    },
+    "shippingCosts": {
+      "standard":  "$5.99",
+      "express":   "$12.99",
+      "overnight": "$24.99"
+    },
+    "discountCodes": {
+      "save10":   "SAVE10",
+      "save20":   "SAVE20",
+      "freeShip": "FREESHIP"
+    }
+  }
+}

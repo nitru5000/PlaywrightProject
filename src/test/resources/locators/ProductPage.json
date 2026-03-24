@@ -1,0 +1,24 @@
+{
+  "addToCart_Button":      "add-to-cart",
+  "wishList_Button":       "toggle-wishlist",
+  "compare_Button":        "add-to-compares",
+  "nextImage_Button":      "next-image",
+  "previousImage_Button":  "prev-image",
+  "sendEmail_Button":      "send-email",
+  "email_Button":          "email-friend-button",
+
+  "inStock":               "In Stock",
+  "addToCartText":         "Add to Cart",
+  "emailAFriendText":      "Email a Friend",
+  "backToProductsText":    "Back to Products",
+  "customerReviewsText":   "Customer Reviews",
+  "noReviewsYetText":      "No Reviews Yet",
+  "signInToReviewText":    "Sign In to Review",
+  "shareYourExperienceText": "Share Your Experience",
+
+  "friendEmailPlaceholder": "friend@example.com",
+  "yourEmailPlaceholder":   "you@example.com",
+  "messagePlaceholder":     "Check out this product!",
+  "shareWithFriendTitle":   "Share with a Friend",
+  "sendEmailText":          "Send Email"
+}

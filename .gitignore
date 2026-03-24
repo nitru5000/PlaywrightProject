@@ -1,0 +1,23 @@
+# Maven build output
+target/
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Test outputs — keep folder structure, ignore generated content
+test-outputs/Logs/*.log
+test-outputs/videos/*.webm
+test-outputs/traces/*.zip
+test-outputs/allure-results/
+test-outputs/allure-report/
+
+# Allure
+allure-results/
+
+# OS
+.DS_Store
+Thumbs.db

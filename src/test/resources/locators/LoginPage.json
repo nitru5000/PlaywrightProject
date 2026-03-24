@@ -1,0 +1,27 @@
+{
+  "url": "https://dot-log-pi.vercel.app/labs/end-to-end/ecommerce/login",
+
+  "emailInput": {
+    "placeholder": "m@example.com"
+  },
+
+  "passwordInput": {
+    "id": "password"
+  },
+
+  "loginButton": {
+    "text": "Log In"
+  },
+
+  "successMessage": {
+    "css": "li[data-sonner-toast][data-type='success'] div[data-title]"
+  },
+
+  "errorMessage": {
+    "testId": "ecommerce-login-error"
+  },
+
+  "forgotPassword": {
+    "testId": "ecommerce-login-forgot-link"
+  }
+}
